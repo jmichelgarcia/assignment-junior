@@ -1,0 +1,64 @@
+body {
+    padding-top: 20px;
+}
+
+.starter-template {
+    padding: 40px 15px;
+    text-align: center;
+}
+
+.jumbotron .img-responsive {
+    margin: 0 auto;
+}
+
+.pad-top {
+    padding-top: 60px;
+}
+
+.pet-table tr td:nth-child(2) {
+    width: 150px;
+}
+
+.pet-table tr:nth-child(1) td {
+    border-top: none;
+}
+
+.pet-title {
+    margin: 15px 15px 15px 0px;
+}
+
+/* Have to set height explicity on ui-view
+to prevent collapsing during animation*/
+[ui-view] {
+    height: 65px;
+}
+
+.ui-view-container {
+    position: relative;
+}
+
+.darkbg-input input {
+    background: transparent;
+    font-family: "latolight", Arial, sans-serif;
+    font-weight: normal;
+    font-size: 16px;
+    padding: 10px 0px;
+    display: block;
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #999999;
+    color: #ffffff;
+    transition: all 0.25s ease;
+}
+
+.margin-top-30 {
+    margin-top: 30px;
+}
+
+.margin-top-30 {
+    margin-top: 30px;
+}
+
+.warning-red {
+    color: red;
+}

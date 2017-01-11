@@ -1,0 +1,14 @@
+<div class="container pad-top">
+    <div class="row">
+        <div class="col-sm-2 control-label">Find by ID</div>
+        <div class="col-sm-8">
+            <input type="text" ng-model="findById" class="form-control" id="id" placeholder="Pet ID"/>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-10 margin-top-30">
+            <a class="btn btn-primary" ui-sref="viewPet({id:findById})">Find</a>
+            <a class="btn btn-danger" ui-sref="pets">Cancel</a>
+        </div>
+    </div>
+</div>

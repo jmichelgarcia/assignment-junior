@@ -1,0 +1,30 @@
+<div class="container pad-top">
+
+    <table class="table pet-table">
+        <tr>
+            <td><h3>Details for {{pet.name}} <span ng-if="!pet.id" class="warning-red"> - No Pet found</span></h3></td>
+            <td></td>
+        </tr>
+
+        <tr>
+            <td>Name</td>
+            <td>{{pet.name}}</td>
+        </tr>
+        <tr>
+            <td>Type</td>
+            <td>{{pet.type}}</td>
+        </tr>
+        <tr>
+            <td>PhotoURL</td>
+            <td>{{pet.photoUrl}}</td>
+        </tr>
+        <tr>
+            <td>Status</td>
+            <td>{{pet.status}}</td>
+        </tr>
+
+    </table>
+    <div class="margin-top-30">
+        <a class="btn btn-danger" ui-sref="pets">Cancel</a>
+    </div>
+</div>

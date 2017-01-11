@@ -1,0 +1,36 @@
+<div class="container pad-top">
+
+    <div class="pet-title">
+        <h3>All pets</h3>
+
+    </div>
+    <table class="table pet-table">
+
+        <thead>
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Type</th>
+            <th>PhotoURL</th>
+            <th>Status</th>
+            <th></th>
+        </tr>
+        </thead>
+        <tr ng-repeat="pet in pets">
+            <td>{{pet.id}}</td>
+            <td>{{pet.name}}</td>
+            <td>{{pet.type}}</td>
+            <td>{{pet.photoUrl}}</td>
+            <td>{{pet.status}}</td>
+            <td>
+                <a class="btn btn-primary" ui-sref="viewPet({id:pet.id})">View</a>
+                <a class="btn btn-danger" ng-click="deletePet(pet)">Delete</a>
+            </td>
+        </tr>
+    </table>
+
+    <div>
+        <a ui-sref="newPet" class="btn-primary btn nodecoration">Add New Pet</a>
+        <a ui-sref="findPet" class="btn-primary btn nodecoration">Find Pet</a>
+    </div>
+</div>
